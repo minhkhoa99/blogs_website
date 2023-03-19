@@ -1,0 +1,101 @@
+// .noti-group {
+//     display: flex;
+//     line-height: 46px;
+//     background-color: inherit;
+//     color: inherit;
+    
+//     .item {
+//         padding: 0 12px;
+//         cursor: pointer;
+
+//         &:hover {
+//             background: rgba(0, 0, 0, 0.025);
+//         }
+//     }
+// // }
+
+
+// .nav-container {
+//     background-color: white;
+//     display: flex;
+//     justify-content: flex-end;
+//     padding: 23px 10px;
+//     align-items: center;
+//     font-family: "Open Sans", sans-serif;
+//     font-family: Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+
+//     .dropdown  {
+//         a {
+//             background-color: transparent;
+//             color: #606260;
+//             font-size: 14px;
+//             border: none;
+//         }
+
+//         a:hover {
+//           background-color: #EBF4FE;
+//           color: #606260;
+//         }
+
+//         .side-bar {
+//             background-color: transparent;
+//             border: none;
+//             display: flex;
+//             ion-icon {
+//                font-size: 25px;
+//             }
+//           }
+          
+//           .btn.show {
+//             color: #606260;
+//             background-color: transparent;
+//           }
+        
+//           .dropdown-item {
+//             display: flex;
+//             align-items: center;
+//             span {
+//               font-size: 14px;
+//               margin-left: 10px;
+//             }
+//           }
+//       }
+//   }
+
+
+
+.dropdown {
+
+     a {
+        background-color: transparent;
+        color: #606260;
+        font-size: 14px;
+        border: none !important;
+
+
+        &:hover {
+            background-color: #EBF4FE;
+            color: #606260;
+        }
+    }
+
+    .dropdown-item {
+        display: flex;
+        align-items: center;
+
+        span {
+            font-size: 14px;
+            margin-left: 10px;
+        }
+    }
+    
+}
+
+
+
+.btn.show {
+    color: #606260;
+    background-color: transparent;
+}
+
+

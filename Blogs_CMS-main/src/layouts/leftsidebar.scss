@@ -1,0 +1,138 @@
+.side-bar {
+    background-color: #6F42C1;
+    width: 250px;
+
+    .img__rikkei {
+        border-bottom: 1px solid #4B545C;
+        padding: 13px 8px;
+        img {
+            width: 100%;
+        }
+    }
+
+    .side-barbody {
+        padding: 0;
+        .list__mission {
+            list-style: none;
+            padding-bottom: 0.5rem !important;
+            padding-top: 0.5rem !important;
+            margin: 0;
+            padding-left: 0;
+
+            li {
+                display: flex;
+                align-items: center;
+                height: var(--el-menu-item-height);
+                line-height: var(--el-menu-item-height);
+                color: var(--el-menu-text-color);
+                padding: 0 20px;
+                list-style: none;
+                cursor: pointer;
+                position: relative;
+                transition: border-color var(--el-transition-duration),background-color var(--el-transition-duration),color var(--el-transition-duration);
+                box-sizing: border-box;
+                white-space: nowrap;
+                font-size: 17px;
+                margin-left: 0.3rem;
+                margin-right: 0.3rem;
+                border-radius: 0.3rem;
+                padding-left: 20px;
+                padding-bottom: 18px;
+
+                ion-icon {
+                    margin-right: 5px;
+                    width: 24px;
+                    text-align: center;
+                    font-size: 30px;
+                    vertical-align: middle;
+                    color: white;
+                }
+
+                span {
+                    color: white;
+                    font-weight: 400;
+                }
+            }
+
+            .action {
+                background-color: transparent;
+                border: none;
+                position: initial !important;
+                inset: auto !important;
+                margin: 0px;
+                transform: inherit !important;
+                overflow-y: auto;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    height: var(--el-menu-item-height);
+                    line-height: var(--el-menu-item-height);
+                    color: var(--el-menu-text-color);
+                    padding: 0 20px;
+                    list-style: none;
+                    cursor: pointer;
+                    position: relative;
+                    transition: border-color var(--el-transition-duration),background-color var(--el-transition-duration),color var(--el-transition-duration);
+                    box-sizing: border-box;
+                    white-space: nowrap;
+                    font-size: 17px;
+                    margin-left: 0.3rem;
+                    margin-right: 0.3rem;
+                    border-radius: 0.3rem;
+                    padding-left: 20px;
+                    padding-bottom: 18px;
+    
+                    ion-icon {
+                        margin-right: 5px;
+                        width: 24px;
+                        text-align: center;
+                        font-size: 30px;
+                        vertical-align: middle;
+                        color: white;
+                    }
+    
+                    span {
+                        color: white;
+                        font-weight: 400;
+                    }
+                }
+    
+
+
+                // ::-webkit-scrollbar-track {
+                //     border-radius: 10px;
+                //     background-color: transparent;
+                // }
+        
+                // ::-webkit-scrollbar {
+                //     width: 1px;
+                //     background-color: transparent;
+                // }
+        
+                // ::-webkit-scrollbar-thumb {
+                //     border-radius: 10px;
+                //     background-color: #A9A9A9;
+                //     display: none;
+                // }
+        
+                // &:hover {
+                //     ::-webkit-scrollbar-thumb {
+                //         display: block ;
+                //     }
+                // }
+
+                .dropdown-item{
+                    color: white !important;
+
+                    &:hover {
+                        background-color: transparent;
+                    }
+                }
+                
+                
+            }
+            
+        }
+    }
+}

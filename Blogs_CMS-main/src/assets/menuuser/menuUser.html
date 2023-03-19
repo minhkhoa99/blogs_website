@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="stylesheet" href="menuUser.css"> -->
+    <link rel="stylesheet" href="./menuUser.css">
+
+    <!-- font icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fontawesome.com/icons">
+
+
+    <!-- link bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
+    <title>DANH SÁCH NGƯỜI DÙNG</title>
+</head>
+
+<body>
+    <div class="position-relative main">
+        <div class="main-sidebars sidebar-dark-success elevation-4">
+            <div class="management-logo">
+                <a href="#" class="brand-link img-logo">
+                    <img class="management-sidebar-logo" src="./img/logo.png" alt="photo">
+                </a>
+            </div>
+
+            <ul class="list-group list-group-sidebar">
+                <li class="list-group bg-warning list-group-item">
+                    <span class="m-3"><i class="fa-solid fa-user"></i></span>
+                    Quản lý người dùng
+                </li>
+
+            </ul>
+        </div>
+
+        <!----------- navbar -------------->
+
+        <div class="management-main">
+            <nav class="navbar navbar-expand-lg navbar-light management-navbar">
+                <div class="link-logo"> <a class="navbar-brand" href="#"><i class="fa-solid fa-bars"></i></a></div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav navbar-collapse-list">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Danh sách người dùng <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tạo người dùng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tạo quyền truy cập</a>
+                        </li>
+                    </ul>
+                    <span class="form-inline my-2 my-lg-0 dropdown management-dropdown-admin">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Xin chào admin
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">
+                                <span> <i class="fa-solid fa-user"></i> </span>
+                                Thông tin cá nhân
+                            </a>
+                            <a class="dropdown-item" href="#"><span><i class="fa-solid fa-lock"></i></span> Đổi mật
+                                khẩu</a>
+                            <a class="dropdown-item" href="#"><span><i class="fa-solid fa-power-off"></i></span> Đăng
+                                xuất</a>
+                        </div>
+                    </span>
+                </div>
+            </nav>
+
+            <!------------main -------------->
+
+            <div class="management-listuser">
+
+                <nav aria-label="breadcrumb management-nav-list">
+                    <ul class="breadcrumb management-nav-breadcrumb">
+                        <li class="breadcrumb-item management-breadcrumb-item"><a class="breadcrumb-item-link"
+                                href="#">Trang chủ</a></li>
+                        <li class="breadcrumb-item management-breadcrumb-item"><a class="breadcrumb-item-link"
+                                href="#">Quản
+                                lý người dùng</a></li>
+                        <li class="breadcrumb-item management-breadcrumb-item active" aria-current="page">Danh sách
+                            người
+                            dùng</li>
+                    </ul>
+                </nav>
+
+                <div class="management-back">
+                    <button class="management-btn-back">
+                        <span> <i class="fa-solid fa-arrow-left"></i> </span> Quay lại
+                    </button>
+                </div>
+
+                <table class="table table-bordered management-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Id</th>
+                            <th scope="col">Tên người dùng</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Quyền hạn</th>
+                            <th scope="col">Hoạt động</th>
+                            <th scope="col">Loại hình</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td scope="row">10</td>
+                            <td>Trần Trung Kiên</td>
+                            <td>kienhee.it@gmail.com</td>
+                            <td>Khách (Guest)</td>
+                            <td>
+                                <div class="checkbox"><i class="fa-solid fa-square-check"></i></div>
+                            </td>
+                            <td>Loại hình khác</td>
+                            <td>
+                                <button>
+                                    <span><i class="fa-solid fa-eye"></i></span>
+                                    Chi tiết
+                                </button>
+                                <button><span><i class="fa-solid fa-lock"></i></span> Đổi mật khẩu</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td scope="row">9</td>
+                            <td>Lê Phạm Thảo Ly</td>
+                            <td>lylpt@rikkeisoft.com</td>
+                            <td>Sub-admin (Sub-admin)</td>
+                            <td>
+                                <div class="checkbox"><i class="fa-solid fa-square-check"></i></div>
+                            </td>
+                            <td>Loại hình khác</td>
+                            <td>
+                                <button>
+                                    <span><i class="fa-solid fa-eye"></i></span>
+                                    Chi tiết
+                                </button>
+                                <button><span><i class="fa-solid fa-lock"></i></span> Đổi mật khẩu</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td scope="row">8</td>
+                            <td>Mạc Thuỳ Linh</td>
+                            <td>linhmt@gmail.com</td>
+                            <td>Sub-admin (Sub-admin)</td>
+                            <td>
+                                <div class="checkbox"><i class="fa-solid fa-square-check"></i></div>
+                            </td>
+                            <td>Loại hình khác</td>
+                            <td>
+                                <button>
+                                    <span><i class="fa-solid fa-eye"></i></span>
+                                    Chi tiết
+                                </button>
+                                <button><span><i class="fa-solid fa-lock"></i></span> Đổi mật khẩu</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td scope="row">8</td>
+                            <td>Mạc Thuỳ Linh</td>
+                            <td>linhmt@gmail.com</td>
+                            <td>Sub-admin (Sub-admin)</td>
+                            <td>
+                                <div class="checkbox"><i class="fa-solid fa-square-check"></i></div>
+                            </td>
+                            <td>Loại hình khác</td>
+                            <td>
+                                <button>
+                                    <span><i class="fa-solid fa-eye"></i></span>
+                                    Chi tiết
+                                </button>
+                                <button><span><i class="fa-solid fa-lock"></i></span> Đổi mật khẩu</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td scope="row">7</td>
+                            <td>Test</td>
+                            <td>Tesy+@gami.com</td>
+                            <td> Khách 2 (Khách2)</td>
+                            <td>
+                                <div class="checkbox"><i class="fa-solid fa-square-check"></i></div>
+                            </td>
+                            <td>Loại hình khác</td>
+                            <td>
+                                <button>
+                                    <span><i class="fa-solid fa-eye"></i></span>
+                                    Chi tiết
+                                </button>
+                                <button><span><i class="fa-solid fa-lock"></i></span> Đổi mật khẩu</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td scope="row">6</td>
+                            <td>Test user</td>
+                            <td>inf.tch@gmail.com</td>
+                            <td>Quản lý đào tạo (Head)</td>
+                            <td>
+                                <div class="checkbox"><i class="fa-solid fa-square-check"></i></div>
+                            </td>
+                            <td>Loại hình khác</td>
+                            <td>
+                                <button>
+                                    <span><i class="fa-solid fa-eye"></i></span>
+                                    Chi tiết
+                                </button>
+                                <button><span><i class="fa-solid fa-lock"></i></span> Đổi mật khẩu</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td scope="row">5</td>
+                            <td>Test teacher</td>
+                            <td>test@gmail.com</td>
+                            <td>Giảng viên (Trainer)</td>
+                            <td>
+                                <div class="checkbox"><i class="fa-solid fa-square-check"></i></div>
+                            </td>
+                            <td>Loại hình khác</td>
+                            <td>
+                                <button>
+                                    <span><i class="fa-solid fa-eye"></i></span>
+                                    Chi tiết
+                                </button>
+                                <button><span><i class="fa-solid fa-lock"></i></span> Đổi mật khẩu</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td scope="row">4</td>
+                            <td>test</td>
+                            <td>test+1@gmail.com</td>
+                            <td>Trợ giảng (Trainer Assistan)</td>
+                            <td>
+                                <div class="checkbox"><i class="fa-solid fa-square-check"></i></div>
+                            </td>
+                            <td>Loại hình khác</td>
+                            <td>
+                                <button>
+                                    <span><i class="fa-solid fa-eye"></i></span>
+                                    Chi tiết
+                                </button>
+                                <button><span><i class="fa-solid fa-lock"></i></span> Đổi mật khẩu</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row">3</td>
+                            <td>Trần Trung Kiên</td>
+                            <td>testNew@gmail.com</td>
+                            <td>Giảng viên (Trainer)</td>
+                            <td>
+                                <div class="checkbox"><i class="fa-solid fa-square-check"></i></div>
+                            </td>
+                            <td>Loại hình khác</td>
+                            <td>
+                                <button>
+                                    <span><i class="fa-solid fa-eye"></i></span>
+                                    Chi tiết
+                                </button>
+                                <button><span><i class="fa-solid fa-lock"></i></span> Đổi mật khẩu</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td scope="row">2</td>
+                            <td>test</td>
+                            <td>son.tx@gmail.com</td>
+                            <td>Giảng viên (Trainer)</td>
+                            <td>
+                                <div class="checkbox"><i class="fa-solid fa-square-check"></i></div>
+                            </td>
+                            <td>Loại hình khác</td>
+                            <td>
+                                <button>
+                                    <span><i class="fa-solid fa-eye"></i></span>
+                                    Chi tiết
+                                </button>
+                                <button><span><i class="fa-solid fa-lock"></i></span> Đổi mật khẩu</button>
+                            </td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-end">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1"><i class="fa-solid fa-chevron-left"></i></a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- bootstrap -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,323 @@
+*, :after, :before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body  {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-family: Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+}
+
+body {
+    margin: 0;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-variant: tabular-nums;
+    line-height: 1.5715;
+    background-color: #F4F6F9;
+    font-feature-settings: "tnum";
+
+}
+
+.container__signin {
+    display: flex;
+    height: 100vh;
+    background-image: url(./images/login/background-dep-5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 50px 50px 50px;
+}
+
+.login {
+    width: 100%;
+    height: 100%;
+}
+
+.ant-row, .ant-row:after, .ant-row:before {
+    display: flex;
+}
+
+.ant-row {
+    flex-flow: row wrap;
+    min-width: 0;
+    height: 100%;
+}
+
+.welcome {
+    background-image: url(./images/login/background-dep-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1;
+}
+
+.ant-col {
+    position: relative;
+}
+
+@media (min-width: 1200px) {
+    .ant-col-xl-16 {
+        display: flex !important;
+        align-items: center;
+        flex: 0 0 66.66666667%;
+        max-width: 66.66666667%;
+    }
+
+    .ant-col-xl-8 {
+        flex: 0 0 33.33333333% !important;
+        max-width: 33.33333333% !important;
+    }
+}
+
+.ant-col-xs-0 {
+    display: none;
+}
+
+.log-in {
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    background-image: url(./images/login/pexels-karolina-grabowska-4464438.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 500px) {
+    .container__signin {
+        padding: 0;
+    }
+}
+
+.ant-col-xs-24 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.ant-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5715;
+    list-style: none;
+    font-feature-settings: "tnum";
+}
+
+.signin p {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    transform: translate(0%, -50%);
+    text-transform: uppercase;
+    font-family: verdana;
+    font-weight: 700;
+    margin-bottom: 0;
+    color: white;
+    text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191, 1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191, 1px 10px 1px #919191, 1px 18px 6px rgb(16 16 16 / 40%), 1px 22px 10px rgb(16 16 16 / 20%), 1px 25px 35px rgb(16 16 16 / 20%), 1px 30px 60px rgb(16 16 16 / 40%);
+}
+
+.form-label {
+    margin-bottom: 0.5rem;
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: emoji;
+}
+
+.face_google {
+    width: 45px;
+}
+
+.face_google img {
+    width: 100%;
+}
+
+.signin_face__gg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-text {
+    font-size: .975em !important;
+    color: #064530;
+    font-weight: 900;
+    font-family: monospace;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600 !important;
+    color: #064530;
+}
+
+.btn {
+    border: none;
+}
+
+/* adminhome */
+.nav-container {
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    padding: 23px 10px;
+    align-items: center;
+}
+
+.side-bar {
+    background-color: transparent;
+    border: none;
+    display: flex;
+}
+
+.side-bar ion-icon {
+    font-size: 25px;
+}
+
+.dropdown a {
+    background-color: transparent;
+    color: #606260;
+    font-size: 14px;
+}
+
+.dropdown a:hover {
+    background-color: #EBF4FE;
+    color: #606260;
+}
+
+.btn.show {
+    color: #606260;
+    background-color: transparent;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-item span {
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.offcanvas {
+    background-color: #6F42C1;
+    width: 250px !important;
+}
+
+.offcanvas-header {
+    border-bottom: 1px solid #4B545C;
+}
+
+.offcanvas-header img {
+    width: 100%;
+}
+
+.home-title  {
+    color: #6C757D;
+    font-size: 17px;
+    margin: 20px 0px ;
+    display: flex;
+    justify-content: center;
+}
+
+.ul-sidebar {
+    list-style: none;
+    padding: 0px !important;
+}
+
+.ul-sidebar li {
+    display: flex;
+    align-items: center;
+    color: white !important;
+    padding: 0 20px;
+    list-style: none;
+    cursor: pointer;
+    transition: border-color var(--el-transition-duration),background-color var(--el-transition-duration),color var(--el-transition-duration);
+    box-sizing: border-box;
+    white-space: nowrap;
+    font-size: 18px !important;
+    margin-left: 0.3rem !important;
+    margin-right: 0.3rem;
+    border-radius: 0.3rem;
+    padding: 10px 10px;
+}
+
+.ul-sidebar li:hover {
+    background-color: #59359A;
+}
+
+.ul-sidebar ion-icon {
+    height: 1em;
+    width: 1em;
+    line-height: 1em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    fill: currentColor;
+    font-size: inherit;
+    margin-right: 15px;
+    width: 24px;
+    text-align: center;
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+.action {
+    background-color: transparent;
+    border: none;
+    position: initial !important;
+    inset: auto !important;
+    margin: 0px;
+    transform: inherit !important;
+}
+
+.action .dropdown-item:hover {
+    background-color: transparent;
+}
+
+.action .dropdown-item {
+    color: white !important;
+}
+
+.offcanvas-body::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: transparent;
+}
+
+.offcanvas-body::-webkit-scrollbar
+{
+	width: 1px;
+	background-color: transparent;
+}
+
+.offcanvas-body::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #A9A9A9;
+    display: none;
+}
+
+.offcanvas-body:hover::-webkit-scrollbar-thumb
+{
+    display: block ;
+}
+
+
+.offcanvas-body {
+    padding: 0;
+}
